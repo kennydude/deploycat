@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block main %}
+<h1>login</h1>
+<form method="post" action="/app/login">
+    <input type="hidden" name="type" value="webapp" />
+    <label>
+        Username: <input type="text" name="username" />
+    </label>
+    <label>
+        Password: <input type="password" name="password" />
+    </label>
+    <label>
+        2FA Code: <input type="number" name="2fa" />
+    </label>
+    <button type="submit">Login</button>
+</form>
+{% endblock %}
